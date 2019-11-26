@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" class="lb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> LOBBY </title>
+
+    <link rel="stylesheet" href="dist/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/vendors/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/vendors/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/lb.min.css">
+    <link rel="shortcut icon" href="dist/img/favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            height: 100vh;
+            background: linear-gradient(to bottom, #2c0001 0%, #510301 28%, #810800 59%, #890802 100%);
+        }
+    </style>
+</head>
+
+<body data-enviroment="dev">
+    <div class="lb-wrapper lb-max">
+        <header class="lb-header">
+            <div class="lb-header-left">
+                <div class="user">
+                    <a href="javascript:" class="ava">
+                        <div class="img lb-lazy" data-src="dist/img/demo-ava.jpg"></div>
+                    </a>
+                    <div class="info">
+                        <div class="name">
+                            <a href="javascript:">
+                                Tran Vi Nam Francis Víu 25cm
+                            </a>
+                        </div>
+                        <a href="javascript:" class="vip">
+                            <img src="dist/img/demo-silver.png" alt="">
+                            <div class="text">
+                                VIP
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="lb-header-icons">
+                    <a href="javascript:" class="icon users">
+                        <div class="inner">
+                            <img src="dist/img/icons/h-ic-user.png" alt="">
+                            <div class="line"></div>
+                            <div class="number">
+                                1.234
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="lb-header-center">
+                <div class="main">
+                    <a href="javascript:" class="coin">
+                        <div class="inner">
+                            <img src="dist/img/icons/h-coin.png" class="icon">
+                            <div class="text">808,368</div>
+                        </div>
+                    </a>
+                    <div class="button">
+                        <a href="javascript:">
+                            <img src="dist/img/lazy-img.png" class="lb-lazy" data-src="dist/img/btn-center.png" alt="">
+                        </a>
+                    </div>
+                    <div class="jack">
+                        <div class="slide owl-carousel owl-theme" id="jack_slide">
+                            <div class="item">
+                                <div class="inner">
+                                    <div class="ava owl-lazy" data-src="dist/img/demo-ava.jpg">
+                                    </div>
+                                    <div class="tt">
+                                        <img src="dist/img/icons/h-coin.png" class="icon">
+                                        <div class="text">
+                                            <div class="name">Trung Thasi Joun Heo</div>
+                                            <div class="num">123,456,789</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg lb-lazy" data-src="dist/img/bg-center-h.png"></div>
+            </div>
+            <div class="lb-header-right">
+                <div class="lb-header-icons right">
+                    <a class="icon" href="javascript:">
+                        <img src="dist/img/icons/h-bonus.png" alt="">
+                    </a>
+                    <a class="icon lb-toggle-list-btn" href="javascript:">
+                        <img class="flag" src="dist/img/icons/flag-cn.png" alt="">
+                        <img src="dist/img/icons/h-icon-bg.png">
+
+                        <div class="lb-toggle-list closed" id="1">
+                            <div class="item" data-lang="cn">
+                                <img class="ic" src="dist/img/icons/flag-cn.png" alt="">
+                                <div class="name">Trung Quốc</div>
+                            </div>
+                            <div class="item" data-lang="th">
+                                <img class="ic" src="dist/img/icons/flag-th.png" alt="">
+                                <div class="name">Thái Lan</div>
+                            </div>
+                            <div class="item" data-lang="km">
+                                <img class="ic" src="dist/img/icons/flag-km.png" alt="">
+                                <div class="name">Campuchia</div>
+                            </div>
+                            <div class="item" data-lang="en">
+                                <img class="ic" src="dist/img/icons/flag-en.png" alt="">
+                                <div class="name">English</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="icon" href="javascript:">
+                        <img src="dist/img/icons/h-mail.png" alt="">
+                    </a>
+                    <a class="icon lb-toggle-list-btn" href="javascript:">
+                        <img src="dist/img/icons/h-download.png" alt="">
+
+                        <div class="lb-toggle-list closed">
+                            <div class="item" data-lang="cn">
+                                <img class="ic" src="dist/img/icons/h-android.png" alt="">
+                                <div class="name">Android</div>
+                            </div>
+                            <div class="item" data-lang="th">
+                                <img class="ic" src="dist/img/icons/h-ios.png" alt="">
+                                <div class="name">Ios</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="icon lb-toggle-list-btn" href="javascript:">
+                        <img src="dist/img/icons/h-setting.png" alt="">
+
+                        <div class="lb-toggle-list closed">
+                            <div class="item">
+                                <img class="ic" src="dist/img/icons/h-logout.png" alt="">
+                                <div class="name">Thoát</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="lb-header-bg lb-lazy" data-src="dist/img/bg-h.png">
+            </div>
+        </header>
+        <div class="lb-main">
+            <div class="lb-lobby lb-lazy hide-on-canvas-showed" data-src="dist/img/bg.png">
+                <div class="lb-lobby-top">
+                    <div class="inner">
+                        <div class="marquee">
+                            <div class="icon">
+                                <img src="dist/img/lazy-img.png" class="lb-lazy"
+                                    data-src="dist/img/icons/t-icon-bell.png" alt="">
+                            </div>
+                            <div class="marquee-message lb-marquee">
+                                <div class="contain" data-time="35">
+                                    <div class="item">
+                                        Ofttimes whom if <strong class="lb-color-red">sea rill</strong> nor in like
+                                        cared
+                                        childe,.
+                                    </div>
+                                    <div class="item">
+                                        Ofttimes whom if sea <strong class="lb-color-green">sea rill</strong> cared
+                                        childe,.
+                                    </div>
+                                    <div class="item">
+                                        Ofttimes whom if sea <strong class="lb-color-white">sea rill</strong> cared
+                                        childe,.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacer"></div>
+                        <ul class="menu right" id="lobby-menu" data-target="#slide-game">
+                            <li class="active">
+                                <a href="javascript:" data-type="0">ALL</a>
+                            </li>
+                            <li>
+                                <a href="javascript:" data-type="1">NEW GAME</a>
+                            </li>
+                            <li>
+                                <a href="javascript:" data-type="2">BET GAME</a>
+                            </li>
+                            <li>
+                                <a href="javascript:" data-type="3">SLOT GAME</a>
+                            </li>
+                            <li>
+                                <a href="javascript:" data-type="4">CARD GAME</a>
+                            </li>
+                            <li>
+                                <a href="javascript:" data-type="5">BONUS GAME</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+                <div class="lb-lobby-games">
+                    <div class="slide-game owl-carousel owl-theme" id="slide-game">
+                        <div class="game">
+                            <div class="inner">
+                                <div class="list wide">
+                                    <div class="item large">
+                                        <a href="javascript:" class="icon open-child">
+                                            <img src="dist/img/game/game-1.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="item has-sub no-margin">
+                                        <div class="sub" style="margin-top: -24px;">
+                                            <a href="javascript:" class="icon open-link right">
+                                                <img style="margin-top: 12px;"
+                                                    src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/bonus-game.webp?version=3.056789"
+                                                    alt="">
+                                            </a>
+                                            <a href="javascript:" class="icon open-link left">
+                                                <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/banca-3d.webp?version=3.056789"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game has-split" data-type="1" data-group="NEW GAME">
+                            <div class="split">
+                                <div class="text">
+                                    NEW GAME
+                                </div>
+                            </div>
+                            <div class="inner">
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/new-game/tien-len.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/card-game/poker-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/new-game/baccarat.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/bonus-game/big-fish.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game has-split" data-type="2" data-group="BET GAME">
+                            <div class="split">
+                                <div class="text">
+                                    BET GAME
+                                </div>
+                            </div>
+                            <div class="inner">
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/bet-game/bau-cua.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/bet-game/tai-xiu.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/bet-game/xoc-dia.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/bet-game/doan-so.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game has-split" data-type="3" data-group="SLOT GAME">
+                            <div class="split">
+                                <div class="text">
+                                    SLOT GAME
+                                </div>
+                            </div>
+                            <div class="inner">
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/kim-quy-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/kim-cuong-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/rong-vang-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/tam-quoc-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/than-tai-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/than-thu-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/tho-dan-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/samurai-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/ty-phu-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/hai-tac-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/f88-mini.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/pacman.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/dracula.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/keo-ngot-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/pinball-robot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/lucky-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/slot-game/fruit-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game has-split" data-type="4" data-group="CARD GAME">
+                            <div class="split">
+                                <div class="text">
+                                    CARD GAME
+                                </div>
+                            </div>
+                            <div class="inner">
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/card-game/tien-len.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/card-game/black-jack.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/card-game/baccarat.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/card-game/binh.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/card-game/poker-slot.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game has-split" data-type="5" data-group="BONUS GAME">
+                            <div class="split">
+                                <div class="text">
+                                    BONUS GAME
+                                </div>
+                            </div>
+                            <div class="inner">
+                                <div class="list">
+                                    <div class="item">
+                                        <a href="javascript:" class="icon open-link">
+                                            <img src="https://static3.live777.com/banca/20191112/lib/resources/default/atlas/webP/language-en/bonus-game/big-fish.webp?version=3.056789"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lb-canvas hide" id="lb-canvas">
+                <div class="game-container" id="gameContainer">
+                    <canvas id="game-demo" width="1280" height="720"></canvas>
+                </div>
+            </div>
+        </div>
+        <footer class="lb-footer">
+        </footer>
+        <div class="lb-fix"></div>
+    </div>
+    <div class="lb-loading">
+
+    </div>
+
+    <script src="dist/vendors/jquery-1.11.2.min.js"></script>
+    <script src="dist/vendors/bootstrap.min.js"></script>
+    <script src="dist/vendors/blazy.min.js"></script>
+    <script src="dist/vendors/mobile-detect.min.js"></script>
+    <script src="dist/vendors/owl.carousel.min.js"></script>
+    <script src="dist/lb.min.js"></script>
+</body>
+
+</html>
